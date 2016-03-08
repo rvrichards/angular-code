@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="banana">
+
+  <head >
+    <meta charset="utf-8" />
+    <title>AngularJS lesson03</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js" ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="banana.js"></script>
+  </head>
+
+  <body >
+
+    <div ng-controller="BananaController as bctrl">
+      <h1>Different methods</h1>
+      <h2>Hiding & Showing buttons</h2>
+      <p>1. Button with ng-hide : {{bctrl.true}}
+      <button ng-hide="bctrl.true">ng-hide=true</button></p>
+      <p>2. Button with ng-show :{{bctrl.false}}
+      <button ng-show="bctrl.false">ng-show=false</button></p>
+      <p>3. Button with ng-hide : {{bctrl.false}}
+      <button ng-hide="bctrl.false">ng-hide=false</button></p>
+      <p>4. Button with ng-show :{{bctrl.true}}
+      <button ng-show="bctrl.true">ng-show=true</button></p>
+    </div>
+
+  </body>
+
+</html>
